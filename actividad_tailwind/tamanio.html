@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-[1000] bg-[#1a1a1a] shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+        <nav class="mx-auto max-w-[1200px] px-5 py-[15px]">
+            <ul class="m-0 flex list-none justify-center gap-[30px] p-0">
+                <li><a href="index.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Texto</a>
+                </li>
+                <li><a href="transicion.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Transiciones</a>
+                </li>
+                <li><a href="tamanio.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Tamaño</a>
+                </li>
+                <li><a href="contenedores.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Contenedores</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex min-h-screen flex-col justify-between gap-8 p-6">
+
+
+        <div class="mx-auto flex w-full max-w-sm items-center gap-x-4
+            rounded-xl bg-white p-6 shadow-lg outline outline-black/5
+            dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1
+            dark:outline-white/10">
+            <img class="size-12 shrink-0" src="./images/imagencss.png" alt="ChitChat Logo" />
+            <div>
+                <div class="text-xl font-medium text-black dark:text-white">Proyecto css</div>
+                <p class="text-gray-500 dark:text-gray-400">Todas las etiquetas</p>
+            </div>
+        </div>
+
+        <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="border border-dashed border-gray-400"><div class="bg-blue-700 px-1 text-xs text-white m-4">Caja</div></div>
+                </div>
+                <h3 class="font-bold">margin</h3>
+                <p class="text-sm">Tailwind: m-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="border border-dashed border-gray-400"><div class="bg-blue-700 px-1 text-xs text-white mt-8">Caja</div></div>
+                </div>
+                <h3 class="font-bold">margin-top</h3>
+                <p class="text-sm">Tailwind: mt-8</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="border border-dashed border-gray-400"><div class="bg-blue-700 px-1 text-xs text-white mr-12">Caja</div></div>
+                </div>
+                <h3 class="font-bold">margin-right</h3>
+                <p class="text-sm">Tailwind: mr-12</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="border border-dashed border-gray-400"><div class="bg-blue-700 px-1 text-xs text-white mb-16">Caja</div></div>
+                </div>
+                <h3 class="font-bold">margin-bottom</h3>
+                <p class="text-sm">Tailwind: mb-16</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="border border-dashed border-gray-400"><div class="bg-blue-700 px-1 text-xs text-white ml-20">Caja</div></div>
+                </div>
+                <h3 class="font-bold">margin-left</h3>
+                <p class="text-sm">Tailwind: ml-20</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-300 p-6"><div class="bg-blue-700 px-1 text-xs text-white">Caja</div></div>
+                </div>
+                <h3 class="font-bold">padding</h3>
+                <p class="text-sm">Tailwind: p-6</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-300 pt-10"><div class="bg-blue-700 px-1 text-xs text-white">Caja</div></div>
+                </div>
+                <h3 class="font-bold">padding-top</h3>
+                <p class="text-sm">Tailwind: pt-10</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-300 pr-16"><div class="bg-blue-700 px-1 text-xs text-white">Caja</div></div>
+                </div>
+                <h3 class="font-bold">padding-right</h3>
+                <p class="text-sm">Tailwind: pr-16</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-300 pb-20"><div class="bg-blue-700 px-1 text-xs text-white">Caja</div></div>
+                </div>
+                <h3 class="font-bold">padding-bottom</h3>
+                <p class="text-sm">Tailwind: pb-20</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-300 pl-24"><div class="bg-blue-700 px-1 text-xs text-white">Caja</div></div>
+                </div>
+                <h3 class="font-bold">padding-left</h3>
+                <p class="text-sm">Tailwind: pl-24</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-10 bg-blue-600 text-xs text-white w-1/2">Caja</div>
+                </div>
+                <h3 class="font-bold">width</h3>
+                <p class="text-sm">Tailwind: w-1/2</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-10 bg-blue-600 text-xs text-white min-w-[8rem]">Caja</div>
+                </div>
+                <h3 class="font-bold">min-width</h3>
+                <p class="text-sm">Tailwind: min-w-[8rem]</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-600 text-xs text-white max-w-[8rem]">Texto largo para ver el límite de tamaño</div>
+                </div>
+                <h3 class="font-bold">max-width</h3>
+                <p class="text-sm">Tailwind: max-w-[8rem]</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-600 text-xs text-white h-24 w-16">Caja</div>
+                </div>
+                <h3 class="font-bold">height</h3>
+                <p class="text-sm">Tailwind: h-24 w-16</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-600 text-xs text-white min-h-[5rem] w-16">Caja</div>
+                </div>
+                <h3 class="font-bold">min-height</h3>
+                <p class="text-sm">Tailwind: min-h-[5rem] w-16</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="bg-blue-600 text-xs text-white max-h-12 w-24 overflow-hidden">Texto largo para ver el límite de tamaño y más texto</div>
+                </div>
+                <h3 class="font-bold">max-height</h3>
+                <p class="text-sm">Tailwind: max-h-12 w-24 overflow-hidden</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

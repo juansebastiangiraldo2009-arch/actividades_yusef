@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-[1000] bg-[#1a1a1a] shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+        <nav class="mx-auto max-w-[1200px] px-5 py-[15px]">
+            <ul class="m-0 flex list-none justify-center gap-[30px] p-0">
+                <li><a href="index.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Texto</a>
+                </li>
+                <li><a href="transicion.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Transiciones</a>
+                </li>
+                <li><a href="tamanio.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Tamaño</a>
+                </li>
+                <li><a href="contenedores.html"
+                        class="text-base font-medium uppercase tracking-[1px] text-white no-underline transition-all duration-300 ease-in-out hover:text-[#007bff]">Contenedores</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex min-h-screen flex-col justify-between gap-8 p-6">
+
+
+        <div class="mx-auto flex w-full max-w-sm items-center gap-x-4
+            rounded-xl bg-white p-6 shadow-lg outline outline-black/5
+            dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1
+            dark:outline-white/10">
+            <img class="size-12 shrink-0" src="./images/imagencss.png" alt="ChitChat Logo" />
+            <div>
+                <div class="text-xl font-medium text-black dark:text-white">Proyecto css</div>
+                <p class="text-gray-500 dark:text-gray-400">Todas las etiquetas</p>
+            </div>
+        </div>
+
+        <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 bg-blue-600 rounded-lg"></div>
+                </div>
+                <h3 class="font-bold">border-radius</h3>
+                <p class="text-sm">Tailwind: rounded-lg</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-blue-600 border-4"></div>
+                </div>
+                <h3 class="font-bold">border-width</h3>
+                <p class="text-sm">Tailwind: border-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-blue-600 border-4 border-dashed"></div>
+                </div>
+                <h3 class="font-bold">border-style</h3>
+                <p class="text-sm">Tailwind: border-4 border-dashed</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <table class="border border-gray-800 text-xs border-collapse"><tr><td class="border border-gray-800 px-2">A</td><td class="border border-gray-800 px-2">B</td></tr><tr><td class="border border-gray-800 px-2">C</td><td class="border border-gray-800 px-2">D</td></tr></table>
+                </div>
+                <h3 class="font-bold">border-collapse</h3>
+                <p class="text-sm">Tailwind: border-collapse</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <table class="border border-gray-800 text-xs border-separate border-spacing-2"><tr><td class="border border-gray-800 px-2">A</td><td class="border border-gray-800 px-2">B</td></tr><tr><td class="border border-gray-800 px-2">C</td><td class="border border-gray-800 px-2">D</td></tr></table>
+                </div>
+                <h3 class="font-bold">border-spacing</h3>
+                <p class="text-sm">Tailwind: border-separate border-spacing-2</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <input class="outline-none w-28 rounded border px-2 py-1" placeholder="Escribe">
+                </div>
+                <h3 class="font-bold">outline</h3>
+                <p class="text-sm">Tailwind: outline-none</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-12 w-24 border text-xs overflow-hidden">Texto largo que se sale de la caja y sigue en varias líneas</div>
+                </div>
+                <h3 class="font-bold">overflow</h3>
+                <p class="text-sm">Tailwind: overflow-hidden</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-12 w-24 border text-xs overflow-x-hidden whitespace-nowrap">Texto largo que se sale de la caja y sigue en varias líneas</div>
+                </div>
+                <h3 class="font-bold">overflow-x</h3>
+                <p class="text-sm">Tailwind: overflow-x-hidden whitespace-nowrap</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-12 w-24 border text-xs overflow-y-hidden">Texto largo que se sale de la caja y sigue en varias líneas</div>
+                </div>
+                <h3 class="font-bold">overflow-y</h3>
+                <p class="text-sm">Tailwind: overflow-y-hidden</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-20"><div class="absolute left-0 top-0 z-0 h-10 w-10 bg-red-500"></div><div class="absolute left-5 top-4 h-10 w-10 bg-blue-600 z-10"></div></div>
+                </div>
+                <h3 class="font-bold">z-index</h3>
+                <p class="text-sm">Tailwind: z-10</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <button class="rounded bg-blue-600 px-3 py-1 text-white pointer-events-none">Click</button>
+                </div>
+                <h3 class="font-bold">pointer-events</h3>
+                <p class="text-sm">Tailwind: pointer-events-none</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <textarea class="resize-none h-16 w-28 border p-1 text-xs">Texto</textarea>
+                </div>
+                <h3 class="font-bold">resize</h3>
+                <p class="text-sm">Tailwind: resize-none</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="rounded bg-blue-600 px-3 py-1 text-xs text-white cursor-pointer">Pasa el mouse</div>
+                </div>
+                <h3 class="font-bold">cursor</h3>
+                <p class="text-sm">Tailwind: cursor-pointer</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="select-none">Texto no seleccionable</div>
+                </div>
+                <h3 class="font-bold">user-select</h3>
+                <p class="text-sm">Tailwind: select-none</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex h-14 w-24 items-center justify-center rounded bg-blue-600 text-xs text-white touch-none">Touch</div>
+                </div>
+                <h3 class="font-bold">touch-action</h3>
+                <p class="text-sm">Tailwind: touch-none</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 bg-gradient-to-r from-red-500 to-blue-600 [filter:grayscale(50%)]"></div>
+                </div>
+                <h3 class="font-bold">filter</h3>
+                <p class="text-sm">Tailwind: [filter:grayscale(50%)]</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-blur-[10px]">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-filter</h3>
+                <p class="text-sm">Tailwind: backdrop-blur-[10px]</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-blur">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-blur</h3>
+                <p class="text-sm">Tailwind: backdrop-blur</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-brightness-75">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-brightness</h3>
+                <p class="text-sm">Tailwind: backdrop-brightness-75</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-contrast-125">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-contrast</h3>
+                <p class="text-sm">Tailwind: backdrop-contrast-125</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-grayscale">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-grayscale</h3>
+                <p class="text-sm">Tailwind: backdrop-grayscale</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-hue-rotate-90">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-hue-rotate</h3>
+                <p class="text-sm">Tailwind: backdrop-hue-rotate-90</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-invert">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-invert</h3>
+                <p class="text-sm">Tailwind: backdrop-invert</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-opacity-50">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-opacity</h3>
+                <p class="text-sm">Tailwind: backdrop-opacity-50</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-saturate-150">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-saturate</h3>
+                <p class="text-sm">Tailwind: backdrop-saturate-150</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-sepia">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-sepia</h3>
+                <p class="text-sm">Tailwind: backdrop-sepia</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-14 w-24 rounded bg-blue-600"><div class="absolute left-4 top-4 h-12 w-12 rounded-full bg-yellow-400 mix-blend-screen"></div></div>
+                </div>
+                <h3 class="font-bold">mix-blend-mode</h3>
+                <p class="text-sm">Tailwind: mix-blend-screen</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-14 w-24 rounded bg-blue-600"><div class="absolute left-4 top-4 h-12 w-12 rounded-full bg-yellow-400 mix-blend-darken"></div></div>
+                </div>
+                <h3 class="font-bold">mix-blend-overlay</h3>
+                <p class="text-sm">Tailwind: mix-blend-darken</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 bg-blue-600 [clip-path:polygon(0_0,100%_0,100%_75%,0_100%)]"></div>
+                </div>
+                <h3 class="font-bold">clip-path</h3>
+                <p class="text-sm">Tailwind: [clip-path:polygon(0_0,100%_0,100%_75%,0_100%)]</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 bg-blue-600 will-change-transform transition hover:scale-110"></div>
+                </div>
+                <h3 class="font-bold">will-change</h3>
+                <p class="text-sm">Tailwind: will-change-transform transition hover:scale-110</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 bg-blue-600 isolate"></div>
+                </div>
+                <h3 class="font-bold">isolation</h3>
+                <p class="text-sm">Tailwind: isolate</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-40 px-1 text-xs"><div class="float-left mr-1 h-10 w-10 rounded-full bg-blue-600 [shape-outside:circle(50%)]"></div>Texto que rodea la forma circular flotante</div>
+                </div>
+                <h3 class="font-bold">shape-outside</h3>
+                <p class="text-sm">Tailwind: [shape-outside:circle(50%)]</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="visible">Visible</div>
+                </div>
+                <h3 class="font-bold">visibility</h3>
+                <p class="text-sm">Tailwind: visible</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="text-xs">Antes <span class="hidden">oculto</span> Después</div>
+                </div>
+                <h3 class="font-bold">display</h3>
+                <p class="text-sm">Tailwind: hidden</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="static">Static</div>
+                </div>
+                <h3 class="font-bold">position</h3>
+                <p class="text-sm">Tailwind: static</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-40 px-1 text-xs"><div class="float-left mr-1 h-8 w-8 bg-blue-600"></div>Texto que rodea al cuadro flotante</div>
+                </div>
+                <h3 class="font-bold">float</h3>
+                <p class="text-sm">Tailwind: float-left</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-40 px-1 text-xs"><div class="float-left h-6 w-6 bg-blue-600"></div><div class="clear-left bg-gray-200">Debajo del flotante</div></div>
+                </div>
+                <h3 class="font-bold">clear</h3>
+                <p class="text-sm">Tailwind: clear-left</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <img src="./images/imagencss.jpg" alt="imagen" class="h-20 w-28 border object-contain">
+                </div>
+                <h3 class="font-bold">object-fit</h3>
+                <p class="text-sm">Tailwind: object-contain</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <img src="./images/imagencss.jpg" alt="imagen" class="h-20 w-28 border object-contain object-left">
+                </div>
+                <h3 class="font-bold">object-position</h3>
+                <p class="text-sm">Tailwind: object-contain object-left</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 top-0"></div></div>
+                </div>
+                <h3 class="font-bold">top</h3>
+                <p class="text-sm">Tailwind: top-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 right-0"></div></div>
+                </div>
+                <h3 class="font-bold">right</h3>
+                <p class="text-sm">Tailwind: right-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 bottom-0"></div></div>
+                </div>
+                <h3 class="font-bold">bottom</h3>
+                <p class="text-sm">Tailwind: bottom-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 left-0"></div></div>
+                </div>
+                <h3 class="font-bold">left</h3>
+                <p class="text-sm">Tailwind: left-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 inset-0"></div></div>
+                </div>
+                <h3 class="font-bold">inset</h3>
+                <p class="text-sm">Tailwind: inset-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 inset-x-0"></div></div>
+                </div>
+                <h3 class="font-bold">inset-x</h3>
+                <p class="text-sm">Tailwind: inset-x-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 inset-y-0"></div></div>
+                </div>
+                <h3 class="font-bold">inset-y</h3>
+                <p class="text-sm">Tailwind: inset-y-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 inset-x-auto"></div></div>
+                </div>
+                <h3 class="font-bold">inset-x-auto</h3>
+                <p class="text-sm">Tailwind: inset-x-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative h-16 w-28 border border-dashed border-gray-400"><div class="absolute h-5 w-5 bg-blue-600 inset-y-auto"></div></div>
+                </div>
+                <h3 class="font-bold">inset-y-auto</h3>
+                <p class="text-sm">Tailwind: inset-y-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">flex</h3>
+                <p class="text-sm">Tailwind: flex</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex flex-col"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">flex-direction</h3>
+                <p class="text-sm">Tailwind: flex flex-col</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-24 gap-1 border border-dashed border-gray-400 flex flex-wrap"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">flex-wrap</h3>
+                <p class="text-sm">Tailwind: flex flex-wrap</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex justify-between"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">justify-content</h3>
+                <p class="text-sm">Tailwind: flex justify-between</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex items-center"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">items-center (align-items)</h3>
+                <p class="text-sm">Tailwind: flex items-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex items-start"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white self-center">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">align-self</h3>
+                <p class="text-sm">Tailwind: self-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white order-1">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">order</h3>
+                <p class="text-sm">Tailwind: order-1</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-24 gap-1 border border-dashed border-gray-400 flex flex-wrap content-center"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">align-content</h3>
+                <p class="text-sm">Tailwind: flex flex-wrap content-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-24 gap-1 border border-dashed border-gray-400"><div class="w-20 bg-blue-600 text-xs text-white shrink-0">1</div><div class="w-20 bg-blue-400 text-xs text-white">2</div></div>
+                </div>
+                <h3 class="font-bold">flex-shrink</h3>
+                <p class="text-sm">Tailwind: shrink-0</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white grow">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">flex-grow</h3>
+                <p class="text-sm">Tailwind: grow</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-20 w-48 gap-1 border border-dashed border-gray-400 flex"><div class="h-4 w-10 bg-blue-600 text-center text-xs text-white basis-1/4">1</div><div class="h-7 w-10 bg-blue-600 text-center text-xs text-white">2</div><div class="h-5 w-10 bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">flex-basis</h3>
+                <p class="text-sm">Tailwind: basis-1/4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div></div>
+                </div>
+                <h3 class="font-bold">grid</h3>
+                <p class="text-sm">Tailwind: grid</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-2 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div></div>
+                </div>
+                <h3 class="font-bold">grid-cols-2</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-2</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-3 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div></div>
+                </div>
+                <h3 class="font-bold">grid-template-columns</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-4 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div><div class="bg-blue-600 text-center text-xs text-white">7</div><div class="bg-blue-600 text-center text-xs text-white">8</div></div>
+                </div>
+                <h3 class="font-bold">grid-cols-4</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-rows-3 grid-flow-col gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div></div>
+                </div>
+                <h3 class="font-bold">grid-template-rows</h3>
+                <p class="text-sm">Tailwind: grid grid-rows-3 grid-flow-col</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-flow-col gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">grid-auto-flow</h3>
+                <p class="text-sm">Tailwind: grid grid-flow-col</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-flow-col auto-cols-fr gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">grid-auto-columns</h3>
+                <p class="text-sm">Tailwind: grid grid-flow-col auto-cols-fr</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48 h-24 grid auto-rows-fr gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">grid-auto-rows</h3>
+                <p class="text-sm">Tailwind: grid auto-rows-fr</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-3 gap-4"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div></div>
+                </div>
+                <h3 class="font-bold">gap</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3 gap-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-3 gap-x-4"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div></div>
+                </div>
+                <h3 class="font-bold">column-gap</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3 gap-x-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-3 gap-y-4"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div></div>
+                </div>
+                <h3 class="font-bold">row-gap</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3 gap-y-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-3 justify-items-center gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">justify-items</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3 justify-items-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48 h-20 grid grid-cols-3 items-start gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">align-items</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3 items-start</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-3 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white justify-self-center">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">justify-self</h3>
+                <p class="text-sm">Tailwind: justify-self-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48 h-24 grid place-content-center gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">place-content</h3>
+                <p class="text-sm">Tailwind: grid place-content-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48 h-20 grid grid-cols-3 place-items-center gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">place-items</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-3 place-items-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48 h-20 grid grid-cols-3 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white place-self-center">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">place-self</h3>
+                <p class="text-sm">Tailwind: place-self-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-gray-800 border"></div>
+                </div>
+                <h3 class="font-bold">border</h3>
+                <p class="text-sm">Tailwind: border</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-gray-800 border-t-2"></div>
+                </div>
+                <h3 class="font-bold">border-top</h3>
+                <p class="text-sm">Tailwind: border-t-2</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-gray-800 border-r-4"></div>
+                </div>
+                <h3 class="font-bold">border-right</h3>
+                <p class="text-sm">Tailwind: border-r-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-gray-800 border-b"></div>
+                </div>
+                <h3 class="font-bold">border-bottom</h3>
+                <p class="text-sm">Tailwind: border-b</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-gray-800 border-l"></div>
+                </div>
+                <h3 class="font-bold">border-left</h3>
+                <p class="text-sm">Tailwind: border-l</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-24 border-gray-800 border-4 border-indigo-500/50"></div>
+                </div>
+                <h3 class="font-bold">border-opacity</h3>
+                <p class="text-sm">Tailwind: border-4 border-indigo-500/50</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 divide-y"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-y</h3>
+                <p class="text-sm">Tailwind: divide-y</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 flex divide-x"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-x</h3>
+                <p class="text-sm">Tailwind: flex divide-x</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 flex flex-col-reverse divide-y divide-y-reverse"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-y-reverse</h3>
+                <p class="text-sm">Tailwind: flex flex-col-reverse divide-y divide-y-reverse</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 flex flex-row-reverse divide-x divide-x-reverse"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-x-reverse</h3>
+                <p class="text-sm">Tailwind: flex flex-row-reverse divide-x divide-x-reverse</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 divide-y divide-black/75"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-opacity</h3>
+                <p class="text-sm">Tailwind: divide-y divide-black/75</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 divide-y divide-dashed"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-style</h3>
+                <p class="text-sm">Tailwind: divide-y divide-dashed</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-28 text-center text-xs divide-gray-800 flex divide-x-2"><div>Uno</div><div>Dos</div><div>Tres</div></div>
+                </div>
+                <h3 class="font-bold">divide-width</h3>
+                <p class="text-sm">Tailwind: flex divide-x-2</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-28 overflow-auto border text-xs overscroll-auto"><div class="h-32">Contenido alto con scroll</div></div>
+                </div>
+                <h3 class="font-bold">overscroll-behavior</h3>
+                <p class="text-sm">Tailwind: overscroll-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-28 overflow-auto border text-xs overscroll-x-auto"><div class="h-32">Contenido alto con scroll</div></div>
+                </div>
+                <h3 class="font-bold">overscroll-behavior-x</h3>
+                <p class="text-sm">Tailwind: overscroll-x-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-28 overflow-auto border text-xs overscroll-y-auto"><div class="h-32">Contenido alto con scroll</div></div>
+                </div>
+                <h3 class="font-bold">overscroll-behavior-y</h3>
+                <p class="text-sm">Tailwind: overscroll-y-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="h-14 w-28 overflow-auto border text-xs scroll-auto"><div class="h-32">Contenido alto con scroll</div></div>
+                </div>
+                <h3 class="font-bold">scroll-behavior</h3>
+                <p class="text-sm">Tailwind: scroll-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto snap-x snap-mandatory"><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div></div>
+                </div>
+                <h3 class="font-bold">scroll-snap-type</h3>
+                <p class="text-sm">Tailwind: snap-x snap-mandatory</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto "><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 snap-center"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 snap-center"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 snap-center"></div></div>
+                </div>
+                <h3 class="font-bold">scroll-snap-align</h3>
+                <p class="text-sm">Tailwind: snap-center</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto scroll-p-4"><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div></div>
+                </div>
+                <h3 class="font-bold">scroll-padding</h3>
+                <p class="text-sm">Tailwind: scroll-p-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto "><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-m-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-m-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-m-4"></div></div>
+                </div>
+                <h3 class="font-bold">scroll-margin</h3>
+                <p class="text-sm">Tailwind: scroll-m-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto "><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mt-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mt-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mt-4"></div></div>
+                </div>
+                <h3 class="font-bold">scroll-margin-top</h3>
+                <p class="text-sm">Tailwind: scroll-mt-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto "><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mr-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mr-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mr-4"></div></div>
+                </div>
+                <h3 class="font-bold">scroll-margin-right</h3>
+                <p class="text-sm">Tailwind: scroll-mr-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto "><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mb-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mb-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-mb-4"></div></div>
+                </div>
+                <h3 class="font-bold">scroll-margin-bottom</h3>
+                <p class="text-sm">Tailwind: scroll-mb-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto "><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-ml-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-ml-4"></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 scroll-ml-4"></div></div>
+                </div>
+                <h3 class="font-bold">scroll-margin-left</h3>
+                <p class="text-sm">Tailwind: scroll-ml-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto scroll-pt-4"><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div></div>
+                </div>
+                <h3 class="font-bold">scroll-padding-top</h3>
+                <p class="text-sm">Tailwind: scroll-pt-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto scroll-pr-4"><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div></div>
+                </div>
+                <h3 class="font-bold">scroll-padding-right</h3>
+                <p class="text-sm">Tailwind: scroll-pr-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto scroll-pb-4"><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div></div>
+                </div>
+                <h3 class="font-bold">scroll-padding-bottom</h3>
+                <p class="text-sm">Tailwind: scroll-pb-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="flex w-40 snap-x snap-mandatory gap-2 overflow-x-auto scroll-pl-4"><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div><div class="h-12 w-32 shrink-0 snap-start bg-blue-600 "></div></div>
+                </div>
+                <h3 class="font-bold">scroll-padding-left</h3>
+                <p class="text-sm">Tailwind: scroll-pl-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-gradient-to-r from-yellow-300 to-pink-500"><span class="absolute text-5xl font-black text-blue-700">ABCD</span><div class="relative rounded border border-white/40 px-5 py-2 text-xs backdrop-opacity-50">Cristal</div></div>
+                </div>
+                <h3 class="font-bold">backdrop-filter-opacity</h3>
+                <p class="text-sm">Tailwind: backdrop-opacity-50</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-rows-3 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">grid-rows-3</h3>
+                <p class="text-sm">Tailwind: grid grid-rows-3</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-rows-2 grid-flow-col gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div></div>
+                </div>
+                <h3 class="font-bold">grid-rows</h3>
+                <p class="text-sm">Tailwind: grid grid-rows-2 grid-flow-col</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-cols-4 gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div><div class="bg-blue-600 text-center text-xs text-white">4</div><div class="bg-blue-600 text-center text-xs text-white">5</div><div class="bg-blue-600 text-center text-xs text-white">6</div><div class="bg-blue-600 text-center text-xs text-white">7</div><div class="bg-blue-600 text-center text-xs text-white">8</div></div>
+                </div>
+                <h3 class="font-bold">grid-cols</h3>
+                <p class="text-sm">Tailwind: grid grid-cols-4</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48  grid grid-flow-col auto-cols-auto gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">auto-cols</h3>
+                <p class="text-sm">Tailwind: grid grid-flow-col auto-cols-auto</p>
+            </div>
+
+            <div class="rounded-2xl bg-blue-600 p-4 text-white">
+                <div class="mb-3 flex h-28 items-center justify-center overflow-hidden rounded-xl bg-white text-gray-800">
+                    <div class="w-48 h-24 grid auto-rows-auto gap-1"><div class="bg-blue-600 text-center text-xs text-white">1</div><div class="bg-blue-600 text-center text-xs text-white">2</div><div class="bg-blue-600 text-center text-xs text-white">3</div></div>
+                </div>
+                <h3 class="font-bold">auto-rows</h3>
+                <p class="text-sm">Tailwind: grid auto-rows-auto</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
